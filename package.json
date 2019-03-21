@@ -1,0 +1,29 @@
+{
+  "name": "@hellroot/config",
+  "version": "0.9.0",
+  "description": "NodeJS application configuration",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellroot/config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hellroot/config/issues"
+  },
+  "keywords": [
+    "config"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "merge-options": "1.0.1"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
+  }
+}
