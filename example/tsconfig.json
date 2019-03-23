@@ -1,0 +1,25 @@
+{
+  "include": ["./@types", "./config", "./src"],
+  "compilerOptions": {
+    /* Basic Options */
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "target": "es2018",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "es2018"],
+
+    /* Module Resolution Options */
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
