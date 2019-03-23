@@ -2,7 +2,7 @@ const path = require('path');
 
 const mergeOptions = require('merge-options');
 
-const ENV = process.env.NODE_ENV;
+const ENV = process.env.CONFIG_ENV || process.env.NODE_ENV;
 const CONFIG_DIR = process.env.CONFIG_DIR || path.join(process.cwd(), 'config');
 
 /**
@@ -32,6 +32,4 @@ const defaultConfig = loadConfig(CONFIG_DIR, 'default', true);
 const environmentConfig = ENV ? loadConfig(CONFIG_DIR, ENV, true) : {};
 const localConfig = ENV === 'local' ? {} : loadConfig(CONFIG_DIR, 'local', false);
 
-module.exports = {
-  config: mergeOptions(defaultConfig, environmentConfig, localConfig)
-};
+module.exports = mergeOptions(defaultConfig, environmentConfig, localConfig);
